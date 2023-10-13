@@ -14,8 +14,9 @@ html, body {
     margin: 30px auto;
 }
 
-img {
-    width: 150px;
+.theme {
+    max-width: 320px;
+    border-radius: 5px;
     margin: 0 auto;
 }
 

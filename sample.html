@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--link rel="stylesheet" type="text/css" href="styles.css"-->
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+	}
+
+	.container {
+      width: 80%;
+      height: 80vh;
+      margin: 10vh auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      outline: none;
+      overflow: auto;
+	}
+
+    </style>
+</head>
+<body>
+    <div class="container" id="content" contenteditable="true"></div>
+    <script>
+    const container = document.getElementById("content");
+
+container.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        // Create a new paragraph when Enter key is pressed
+        const newParagraph = document.createElement("p");
+        container.appendChild(newParagraph);
+    }
+});
+</script>
+</body>
+</html>
+
