@@ -6,6 +6,16 @@ html, body {
     color: #432000;
     user-select: none;
 }
+.theme {
+    max-width: 320px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+/* Date container */
+.datecontainer
+{
+    margin-top: 15px;
+}
 
 .container {
     display: flex;
@@ -14,11 +24,7 @@ html, body {
     margin: 30px auto;
 }
 
-.theme {
-    max-width: 320px;
-    border-radius: 5px;
-    margin: 0 auto;
-}
+
 
 input {
     color: #432000;

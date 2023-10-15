@@ -14,13 +14,19 @@
     </head>
     <body>
         <div class="container">
-            <div class="datecontainer">
-                <h3>Day : <p class="date"></p></h3>
-            </div>
             <img class="theme" src="assets/productivity.png">
-            <ul>
-                <li></li>
-            </ul>
+            <div class="datecontainer">
+                <h3>Day : <span id="date"></span></h3>
+            </div>
+            
+            <div id="left-container">
+                <ul id="priority">
+                    <li id="priority-one"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
             <input type="text" id="input-field" placeholder="To Do">
             <button id="add-button">Add to list</button>
             <ul id="shopping-list">
