@@ -78,3 +78,15 @@ function appendItemToShoppingListEl(item) {
     
     shoppingListEl.append(newEl)
 }
+
+
+
+// functionality
+// Date constructor
+const d = new Date();
+const date = document.getElementById("date");
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+date.textContent = `${d.getDate()}-${month[d.getMonth()]}-${d.getFullYear()}, ${weekday[d.getDay()]}`;
